@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Platzi Travel</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar"></nav>
+      <div id="tab-bar"></div>
+    </header>
+    <main>
+      <section class="w-full h-screen">
+        <div id="home">
+          <div class="w-full h-3/4">
+            <div
+              class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
+            >
+              <input
+                class="outline-none p-3 px-6 rounded-full shadow-sm"
+                placeholder="San Francisco"
+                type="search"
+              />
+              <button
+                class="w-36 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white"
+              >
+                Explore More
+              </button>
+            </div>
+            <div class="w-full h-screen bg-sanFrancisco bg-cover"></div>
+          </div>
+        </div>
+        <div class="p-6" id="recommended">
+          <h2 class="text-3xl font-semibold text-primary">
+            Our recomendations
+          </h2>
+          <div
+            class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex scrollbar-hide gap-4"
+          >
+            <div class="card">
+              <div class="card__cover bg-norway"></div>
+              <div class="card__info">
+                <p class="info__title">Norway</p>
+                <p class="info__description">Beautiful landscapes</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__cover bg-new_york"></div>
+              <div class="card__info">
+                <p class="info__title">New York</p>
+                <p class="info__description">Concrete jungle</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__cover bg-yosemite"></div>
+              <div class="card__info">
+                <p class="info__title">Yosemite</p>
+                <p class="info__description">A break from the world</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__cover bg-seattle"></div>
+              <div class="card__info">
+                <p class="info__title">Seattle</p>
+                <p class="info__description">Big City</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__cover bg-switzerland"></div>
+              <div class="card__info">
+                <p class="info__title">Switzerland</p>
+                <p class="info__description">Big City</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="trending-stays"></div>
+      </section>
+    </main>
+  </body>
+</html>

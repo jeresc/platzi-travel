@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-48 h-64 shadow-md rounded-lg flex-none;
+}
+
+.card__cover {
+  @apply w-full h-3/5 bg-cover rounded-t-lg;
+}
+
+.card__info {
+  @apply w-full h-2/5 bg-secondary rounded-b-lg;
+}
+
+.info__title {
+  @apply text-white font-bold text-xl px-4 py-1 pt-3;
+}
+
+.info__description {
+  @apply text-white text-sm px-4;
+}
+
+.card:nth-child(even) .card__info {
+  @apply bg-white;
+}
+.card:nth-child(even) .info__title,
+.card:nth-child(even) .info__description {
+  @apply text-tertiary;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
