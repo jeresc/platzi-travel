@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card {
-  @apply w-48 h-64 shadow-md rounded-lg flex-none;
+  @apply w-52 h-72 lg:w-64 lg:h-80 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
 }
 
 .card__cover {
@@ -15,7 +15,7 @@
 }
 
 .info__title {
-  @apply text-white font-bold text-xl px-4 py-1 pt-3;
+  @apply text-white font-bold text-lg px-4 py-1 pt-3;
 }
 
 .info__description {
@@ -28,6 +28,10 @@
 .card:nth-child(even) .info__title,
 .card:nth-child(even) .info__description {
   @apply text-tertiary;
+}
+
+.stays__card__title {
+  @apply text-2xl px-6 pb-1 font-semibold text-white;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
