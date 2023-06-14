@@ -11,7 +11,7 @@
 }
 
 .card__info {
-  @apply w-full h-2/5 bg-secondary rounded-b-lg;
+  @apply w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700;
 }
 
 .info__title {
@@ -23,15 +23,18 @@
 }
 
 .card:nth-child(even) .card__info {
-  @apply bg-white;
+  @apply bg-white dark:bg-gray-800;
 }
 .card:nth-child(even) .info__title,
 .card:nth-child(even) .info__description {
-  @apply text-tertiary;
+  @apply text-tertiary dark:text-gray-300;
 }
 
 .stays__card__title {
-  @apply text-2xl px-6 pb-1 font-semibold text-white;
+  @apply text-2xl px-6 pb-1 font-semibold text-white lg:inline-block lg:mt-14 transition-all ease-in-out group-hover:text-3xl group-hover:pr-12 group-hover:mt-16;
+}
+.stays__card__info {
+  @apply text-base pl-6 text-white mr-28 lg:text-lg lg:inline-block lg:mr-6 transition-all ease-in-out group-hover:text-xl group-hover:mr-12;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
