@@ -767,12 +767,16 @@ video {
   background-position: center;
 }
 
+.bg-left {
+  background-position: left;
+}
+
 .bg-right {
   background-position: right;
 }
 
-.bg-bottom {
-  background-position: bottom;
+.bg-right-top {
+  background-position: right top;
 }
 
 .fill-current {
@@ -834,6 +838,10 @@ video {
   padding-top: 0.25rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -856,10 +864,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .font-Montserrat {
@@ -1134,6 +1138,14 @@ video {
 
   .sm\:grid-rows-4 {
     grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:bg-local {
+    background-attachment: local;
+  }
+
+  .sm\:bg-scroll {
+    background-attachment: scroll;
   }
 
   .sm\:pb-8 {
